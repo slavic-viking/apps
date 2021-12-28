@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wostal-eu
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: production
+  source:
+    path: kustomize/overlays/production
+    repoURL: https://github.com/slavic-viking/www-wostal
+    targetRevision: HEAD
+    kustomize:
+      images:
+      - slavicviking/www-wostal:e165453fe577d7d37d99bb68ec5622f01586a305
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
