@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
     kustomize:
       images:
-      - slavicviking/www-wostal:c133d8e24182881039386927ef8d53f279d7d174
+      - slavicviking/www-wostal:a282a439364356e0a58e78da8e011a0d5fa86184
   destination:
     server: https://kubernetes.default.svc
     namespace: staging
