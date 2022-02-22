@@ -15,10 +15,10 @@ spec:
       skipCrds: true
       values: |
         grafana:
-          # admin:
-          #   existingSecret: "grafana-admin-user"
-          #   userKey: user
-          #   passwordKey: password
+          admin:
+            existingSecret: "grafana-admin"
+              userKey: user
+              passwordKey: password
           ingress:
             enabled: true
             annotations:
