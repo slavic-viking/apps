@@ -12,8 +12,6 @@ spec:
     path: ''
     chart: kube-prometheus-stack
     targetRevision: kube-prometheus-stack-31.0.0
-    directory:
-      recurse: true
     helm:
       skipCrds: true
       values: |
