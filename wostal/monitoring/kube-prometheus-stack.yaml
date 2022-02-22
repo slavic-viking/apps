@@ -9,8 +9,7 @@ spec:
   project: monitoring
   source:
     repoURL: https://github.com/prometheus-community/helm-charts.git
-    path: ''
-    chart: kube-prometheus-stack
+    path: 'charts/kube-prometheus-stack'
     targetRevision: 32.2.1
     helm:
       skipCrds: true
