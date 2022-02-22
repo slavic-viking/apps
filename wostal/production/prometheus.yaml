@@ -13,9 +13,9 @@ spec:
     targetRevision: HEAD
     helm:
       values: |
-        prometheusSpec:
-          podMonitorSelectorNilUsesHelmValues: false
-          serviceMonitorSelectorNilUsesHelmValues: false
+        server:
+          namespaces:
+            - clusterwide
         extraScrapeConfigs: |
           - job_name: argo-workflows-metrics
             scrape_interval: 15s
