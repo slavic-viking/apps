@@ -69,6 +69,10 @@ spec:
                 url: https://raw.githubusercontent.com/argoproj/argo-cd/master/examples/dashboard.json
               argo-rollouts:
                 url: https://raw.githubusercontent.com/argoproj/argo-rollouts/master/examples/dashboard.json
+              argo-worflows
+                gbetId: 13927
+                revision: 4
+                datasource: Prometheus
             nginx:
               nginx:
                 url: https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/grafana/dashboards/nginx.json
