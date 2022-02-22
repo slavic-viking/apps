@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/prometheus-community/helm-charts.git
     path: 'charts/kube-prometheus-stack'
-    targetRevision: 32.2.1
+    targetRevision: kube-prometheus-stack-32.2.1
     helm:
       skipCrds: true
       values: |
