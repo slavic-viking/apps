@@ -14,7 +14,7 @@ spec:
     helm:
       values: |
         extraScrapeConfigs: |
-          - job-name: argo-workflows-metrics
+          - job_name: argo-workflows-metrics
             scrape_interval: 15s
             kubernetes_sd_configs:
             - role: pod
