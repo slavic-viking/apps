@@ -8,11 +8,14 @@ metadata:
 spec:
   project: monitoring
   source:
+    repoURL: https://github.com/prometheus-community/helm-charts.git
     path: ''
-    repoURL: https://prometheus-community.github.io/helm-charts
-    targetRevision: '32.2.1'
     chart: kube-prometheus-stack
+    targetRevision: kube-prometheus-stack-31.0.0
+    directory:
+      recurse: true
     helm:
+      skipCrds: true
       values: |
         grafana:
           # admin:
@@ -140,3 +143,4 @@ spec:
       prune: true
     syncOptions:
     - CreateNamespace=true
+    - Replace=true
