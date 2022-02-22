@@ -70,8 +70,12 @@ spec:
               argo-rollouts:
                 url: https://raw.githubusercontent.com/argoproj/argo-rollouts/master/examples/dashboard.json
               argo-workflows:
+                gnetId: 14136
+                revision: 1
+                datasource: Prometheus
+              argo-workflows-default:
                 gnetId: 13927
-                revision: 4
+                revision: 1
                 datasource: Prometheus
             nginx:
               nginx:
