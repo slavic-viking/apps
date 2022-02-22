@@ -11,7 +11,7 @@ spec:
     repoURL: https://github.com/prometheus-community/helm-charts.git
     path: ''
     chart: kube-prometheus-stack
-    targetRevision: kube-prometheus-stack-31.0.0
+    targetRevision: kube-prometheus-stack-32.2.1
     helm:
       skipCrds: true
       values: |
