@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kube-prometheus
+  name: kube-prometheus-stack
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -131,7 +131,6 @@ spec:
                   regex: (.+);(eventsource-controller|sensor-controller|eventbus-controller)
                   replacement: $1
                   target_label: 'namespace'
-
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
