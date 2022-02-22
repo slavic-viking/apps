@@ -1,3 +1,3 @@
 # Apps
 
-Applicatons manifests for CI/CD
+## Applicatons manifests for CI/CD
