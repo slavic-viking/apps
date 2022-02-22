@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
     helm:
       values: |
-      extraScrapeConfigs:
+      extraScrapeConfigs: |
         - job_name: argo-rollouts
           scrape_interval: 15s
           kubernetes_sd_configs:
