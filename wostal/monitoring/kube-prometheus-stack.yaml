@@ -63,6 +63,14 @@ spec:
                   editable: false
                   options:
                     path: /var/lib/grafana/dashboards/argo
+                - name: istio
+                  orgId: 1
+                  folder: 'istio'
+                  type: file
+                  disableDeletion: true
+                  editable: false
+                  options:
+                    path: /var/lib/grafana/dashboards/argo
           dashboards:
             argo:
               argo-cd:
@@ -95,18 +103,18 @@ spec:
                 gnetId: 7645
                 revision: 110
                 datasource: Prometheus
-            #   istio-service-dashboard:
-            #     gnetId: 7636
-            #     revision: 110
-            #     datasource: Prometheus
-            #   istio-workload-dashboard:
-            #     gnetId: 7630
-            #     revision: 110
-            #     datasource: Prometheus
-            #   istio-mesh-dashboard:
-            #     gnetId: 7639
-            #     revision: 110
-            #     datasource: Prometheus
+              istio-service-dashboard:
+                gnetId: 7636
+                revision: 110
+                datasource: Prometheus
+              istio-workload-dashboard:
+                gnetId: 7630
+                revision: 110
+                datasource: Prometheus
+              istio-mesh-dashboard:
+                gnetId: 7639
+                revision: 110
+                datasource: Prometheus
         prometheus:
           prometheusSpec:
             podMonitorSelectorNilUsesHelmValues: false
