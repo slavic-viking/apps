@@ -103,7 +103,7 @@ spec:
                 gnetId: 7630
                 revision:110
                 datasource: Prometheus
-              istio-mesh-dashboard"
+              istio-mesh-dashboard:
                 gnetId: 7639
                 revision:110
                 datasource: Prometheus
