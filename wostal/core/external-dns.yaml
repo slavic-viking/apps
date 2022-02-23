@@ -18,7 +18,7 @@ spec:
           - service
           - ingress
           - istio-gateway
-          - isto-virtual-service
+          - istio-virtual-service
         provider: ovh
         ovh:
          secretName: ovh
