@@ -14,7 +14,7 @@ spec:
     chart: external-dns
     helm:
       values: |
-        sources:
+        sources: |
           - service
           - ingress
           - istio-gateway
