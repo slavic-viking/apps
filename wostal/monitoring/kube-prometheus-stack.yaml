@@ -70,7 +70,7 @@ spec:
                   disableDeletion: true
                   editable: false
                   options:
-                    path: /var/lib/grafana/dashboards/argo
+                    path: /var/lib/grafana/dashboards/istio
           dashboards:
             argo:
               argo-cd:
