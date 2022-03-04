@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
     kustomize:
       images:
-      - slavicviking/www-pnb:a4b41b43aeef0da9afdcfac226a06e53cadc3d64
+      - slavicviking/www-pnb:c40a9a5b1bc8f99ac9655f81048a5af86b7541b0
   destination:
     server: https://kubernetes.default.svc
     namespace: staging
